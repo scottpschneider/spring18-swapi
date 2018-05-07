@@ -15,5 +15,11 @@ function SwapiService() {
     $.get(url).then(cb);
     console.log(2);
   };
+
+  this.getPlanet = function getPlanet(url, cb){
+    url = url || "https://swapi.co/api/planets/1/"; 
+    $.get(url).then(cb);
+    console.log(url);
+  }
 }
 console.log(2);
