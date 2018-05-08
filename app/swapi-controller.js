@@ -10,15 +10,11 @@ function SwapiController() {
     people.forEach(person => {
       template += `<div>
         <h5>${person.name}</h5>
-        <button onclick="app.controllers.swapiController.getPlanet('${person.homeworld}')">View Home World</button>
+        <button onclick="app.controllers.swapiController.getPlanet('${person.homeworld}')">Home World</button>
       </div>`;
     });
     document.getElementById("sw-people").innerHTML = template;
   }
-
-
-
-
 
   function drawButtons(res) {
     var template = ''
